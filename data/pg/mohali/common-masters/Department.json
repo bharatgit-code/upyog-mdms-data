@@ -66,6 +66,112 @@
       "name": "Works Branch",
       "code": "DEPT_35",
       "active": true
+    },
+    {
+      "name": "Animal Husbandry",
+      "code": "DEPT_41",
+      "active": true
+    },
+    {
+      "name": "Bio-Medical Waste",
+      "code": "DEPT_42",
+      "active": true
+    },
+    {
+      "name": "Birth & Death Registration",
+      "code": "DEPT_43",
+      "active": true
+    },
+    {
+      "name": "Disability Welfare",
+      "code": "DEPT_44",
+      "active": true
+    },
+    {
+      "name": "Education Department",
+      "code": "DEPT_45",
+      "active": true
+    },
+    {
+      "name": "Electrical Department",
+      "code": "DEPT_46",
+      "active": true
+    },
+    {
+      "name": "Encroachments",
+      "code": "DEPT_47",
+      "active": true
+    },
+    {
+      "name": "Environment Department",
+      "code": "DEPT_48",
+      "active": true
+    },
+    {
+      "name": "Estate Department",
+      "code": "DEPT_49",
+      "active": true
+    },
+    {
+      "name": "Fire & Disaster Management",
+      "code": "DEPT_50",
+      "active": true
+    },
+    {
+      "name": "Godavari Conservation Cell",
+      "code": "DEPT_51",
+      "active": true
+    },
+    {
+      "name": "Solid Waste Management",
+      "code": "DEPT_52",
+      "active": true
+    },
+    {
+      "name": "Public Works Department",
+      "code": "DEPT_53",
+      "active": true
+    },
+    {
+      "name": "Sewerage Department",
+      "code": "DEPT_54",
+      "active": true
+    },
+    {
+      "name": "Slum Development",
+      "code": "DEPT_55",
+      "active": true
+    },
+    {
+      "name": "Sports Department",
+      "code": "DEPT_56",
+      "active": true
+    },
+    {
+      "name": "Town Planning Department",
+      "code": "DEPT_57",
+      "active": true
+    },
+    {
+      "name": "Water Supply Department",
+      "code": "DEPT_58",
+      "active": true
+    },
+    {
+      "name": "Medical & Health Department",
+      "code": "DEPT_59",
+      "active": true
+    },
+    {
+      "name": "Pest Control",
+      "code": "DEPT_60",
+      "active": true
+    },
+    {
+      "name": "IT & Applications",
+      "code": "DEPT_61",
+      "active": true
     }
-  ]
+]
 }
+
