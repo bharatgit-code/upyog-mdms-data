@@ -3,7 +3,7 @@
   "moduleName": "common-masters",
   "Department": [
     {
-      "name": "Street Lights",
+      "name": "Electricity & streetlight",
       "code": "DEPT_1",
       "active": true
     },
@@ -190,6 +190,16 @@
     {
       "name": "Tender Cell",
       "code": "DEPT_57",
+      "active": true
+    },
+    {
+      "name": "Education & Skills",
+      "code": "DEPT_58",
+      "active": true
+    },
+    {
+      "name": "Animal",
+      "code": "DEPT_59",
       "active": true
     }
   ]

@@ -3,70 +3,1695 @@
   "moduleName": "RAINMAKER-PGR",
   "ServiceDefs": [
     {
-      "serviceCode": "NoStreetlight",
-      "name": "No streetlight",
+      "serviceCode": "StreetlightsStartDuringNight",
+      "name": "Starting streetlights during night",
+      "keywords": "streetlight, schedule, on time, night, timing, lighting, automatic, switch",
+      "department": "DEPT_1",
+      "slaHours": 336,
+      "menuPath": "Electricity & streetlight",
+      "active": true
+    },
+    {
+      "serviceCode": "LightingScheduleNotFollowed",
+      "name": "Lighting schedule not followed",
+      "keywords": "streetlight, schedule, timing, on, off, automation, control, switch",
+      "department": "DEPT_1",
+      "slaHours": 336,
+      "menuPath": "Electricity & streetlight",
+      "active": true
+    },
+    {
+      "serviceCode": "TerminalBoxOpen",
+      "name": "Closing / removal of open terminal box",
+      "keywords": "terminal box, open box, electric hazard, cover, streetlight, wiring, safety",
+      "department": "DEPT_1",
+      "slaHours": 336,
+      "menuPath": "Electricity & streetlight",
+      "active": true
+    },
+    {
+      "serviceCode": "StreetlightNotWorking",
+      "name": "Streetlight Not Working",
       "keywords": "streetlight, light, repair, work, pole, electric, power, repair, damage, fix",
       "department": "DEPT_1",
       "slaHours": 336,
-      "menuPath": "StreetLights",
+      "menuPath": "Electricity & streetlight",
       "active": true
     },
     {
-      "serviceCode": "NonSweepingOfRoad",
-      "name": "Non sweeping of road",
+      "serviceCode": "RepairOfLight",
+      "name": "Repair of light",
+      "keywords": "light repair, streetlight repair, bulb change, lamp faulty, electric pole, fix",
+      "department": "DEPT_1",
+      "slaHours": 336,
+      "menuPath": "Electricity & streetlight",
+      "active": true
+    },
+    {
+      "serviceCode": "RemoveDamagedPole",
+      "name": "Removing damaged pole obstructing road",
+      "keywords": "damaged pole, electric pole, obstruction, broken pole, streetlight hazard",
+      "department": "DEPT_1",
+      "slaHours": 336,
+      "menuPath": "Electricity & streetlight",
+      "active": true
+    },
+    {
+      "serviceCode": "SetupElectricPole",
+      "name": "Setting up of electric pole",
+      "keywords": "electric pole, new pole, installation, streetlight post, electricity infrastructure",
+      "department": "DEPT_1",
+      "slaHours": 336,
+      "menuPath": "Electricity & streetlight",
+      "active": true
+    },
+    {
+      "serviceCode": "ElectricShockInStreetlight",
+      "name": "Electric shock in street light",
+      "keywords": "electric shock, streetlight, safety, electric hazard, wiring fault, live current",
+      "department": "DEPT_1",
+      "slaHours": 336,
+      "menuPath": "Electricity & streetlight",
+      "active": true
+    },
+    {
+      "serviceCode": "ProvidingNewLights",
+      "name": "Providing new lights",
+      "keywords": "new streetlight, light installation, illumination, electric pole light, lighting expansion",
+      "department": "DEPT_1",
+      "slaHours": 336,
+      "menuPath": "Electricity & streetlight",
+      "active": true
+    },
+    {
+      "serviceCode": "InsufficientLight",
+      "name": "Insufficient light",
+      "keywords": "dim light, low lighting, insufficient illumination, weak streetlight, dark area",
+      "department": "DEPT_1",
+      "slaHours": 336,
+      "menuPath": "Electricity & streetlight",
+      "active": true
+    },
+    {
+      "serviceCode": "DamagedDrainSlab",
+      "name": "Damaged Drain Slab",
       "active": true,
       "keywords": "garbage, collect, litter, clean, door, waste, remove, sweeper, sanitation, dump, health, debris, throw",
       "department": "DEPT_3",
       "slaHours": 336,
-      "menuPath": "Garbage",
+      "menuPath": "Water, Sewer & Drainage",
       "order": 5
     },
     {
-      "serviceCode": "StreetLightNotWorking",
-      "name": "Streetlight not working",
-      "keywords": "streetlight, light, repair, work, pole, electric, power, repair, fix",
-      "department": "DEPT_1",
-      "slaHours": 336,
-      "menuPath": "StreetLights",
+      "serviceCode": "DamagedDrainSlab",
+      "name": "Damaged Drain Slab",
       "active": true,
-      "order": 1
-    },
-    {
-      "serviceCode": "GarbageNeedsTobeCleared",
-      "name": "Garbage needs to be cleared",
-      "keywords": "garbage, collect, litter, clean, door, waste, remove, sweeper, sanitation, dump, health, debris, throw",
+      "keywords": "drain, slab, broken, damaged, drainage, cover, repair",
       "department": "DEPT_3",
       "slaHours": 336,
-      "menuPath": "Garbage",
-      "active": true,
-      "order": 4
+      "menuPath": "Water, Sewer & Drainage"
     },
     {
-      "serviceCode": "DamagedGarbageBin",
-      "name": "Damaged garbage bin",
-      "keywords": "garbage, waste, bin, dustbin, clean, remove, sanitation, overflow, smell, health, throw, dispose",
+      "serviceCode": "DamagedOpenSWD",
+      "name": "Damaged open SWD",
+      "active": true,
+      "keywords": "storm water drain, open drain, broken, damaged, repair",
       "department": "DEPT_3",
       "slaHours": 336,
-      "menuPath": "Garbage",
-      "active": true
+      "menuPath": "Water, Sewer & Drainage"
+    },
+    {
+      "serviceCode": "MissingDrainCover",
+      "name": "Damage / Missing cover",
+      "active": true,
+      "keywords": "drain cover, missing, damaged, open drainage, repair",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Water, Sewer & Drainage"
+    },
+    {
+      "serviceCode": "RepairBrokenChambers",
+      "name": "Repairing of broken chambers",
+      "active": true,
+      "keywords": "sewer chamber, broken chamber, drain repair",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Water, Sewer & Drainage"
+    },
+    {
+      "serviceCode": "StopLeakageInNalla",
+      "name": "Stopping leakage of sewage water in nalla",
+      "active": true,
+      "keywords": "sewage leak, nalla leakage, sewer overflow, drain repair",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Water, Sewer & Drainage"
+    },
+    {
+      "serviceCode": "ReplaceDamagedManholeCovers",
+      "name": "Replacement of missing / damaged manhole covers",
+      "active": true,
+      "keywords": "manhole cover, missing, damaged, replacement, drainage",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Water, Sewer & Drainage"
+    },
+    {
+      "serviceCode": "RepairPipeSewer",
+      "name": "Repairs of pipe sewers / main sewers",
+      "active": true,
+      "keywords": "sewer pipe repair, main sewer, drainage repair, leakage",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Water, Sewer & Drainage"
+    },
+    {
+      "serviceCode": "RaiseManholeCovers",
+      "name": "Raising of manhole covers except in monsoon",
+      "active": true,
+      "keywords": "manhole raising, cover alignment, drainage work",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Water, Sewer & Drainage"
+    },
+    {
+      "serviceCode": "STPProblemNMC",
+      "name": "Problem regarding Sewerage Treatment Plant (STP), NMC",
+      "active": true,
+      "keywords": "STP, sewage treatment plant, drainage issue, malfunction",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Water, Sewer & Drainage"
+    },
+    {
+      "serviceCode": "ClosingOpenManhole",
+      "name": "Closing open manhole",
+      "active": true,
+      "keywords": "open manhole, danger, repair, drainage hazard",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Water, Sewer & Drainage"
+    },
+    {
+      "serviceCode": "OdourFromSewerLine",
+      "name": "Odour from sewer line",
+      "active": true,
+      "keywords": "sewer smell, drainage odour, bad smell, leak",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Water, Sewer & Drainage"
+    },
+    {
+      "serviceCode": "OverflowingSewer",
+      "name": "Overflowing sewer line or manholes",
+      "active": true,
+      "keywords": "sewer overflow, manhole overflow, blockage, drainage",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Water, Sewer & Drainage"
+    },
+    {
+      "serviceCode": "SewerLineChoke",
+      "name": "Sewer Line Choke And Blockages",
+      "active": true,
+      "keywords": "sewer choke, drainage blockage, sewer cleaning",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Water, Sewer & Drainage"
+    },
+    {
+      "serviceCode": "STPProblemPrivateSociety",
+      "name": "STP Problem – Group Housing Societies (Private)",
+      "active": true,
+      "keywords": "private STP, society sewage plant, malfunction, drainage issue",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Water, Sewer & Drainage"
+    },
+    {
+      "serviceCode": "SlumGutterNotCleaned",
+      "name": "0.75 CUM Gutter not cleaned in scheduled date",
+      "active": true,
+      "keywords": "gutter cleaning, slum area, drain not cleaned, drainage",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Water, Sewer & Drainage"
+    },
+    {
+      "serviceCode": "WaterSupplyNonSupplyHours",
+      "name": "Water supply during non-supply hours",
+      "active": true,
+      "keywords": "wrong water supply timing, water issue, supply problem",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Water, Sewer & Drainage"
+    },
+    {
+      "serviceCode": "ValveLeakage",
+      "name": "Valve leakage",
+      "active": true,
+      "keywords": "valve leakage, water valve leak, repair",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Water, Sewer & Drainage"
+    },
+    {
+      "serviceCode": "OverflowOverheadTank",
+      "name": "Overflow of overhead tank",
+      "active": true,
+      "keywords": "tank overflow, water wastage, overhead tank leak",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Water, Sewer & Drainage"
+    },
+    {
+      "serviceCode": "WaterTankerRequired",
+      "name": "Providing water by tankers",
+      "active": true,
+      "keywords": "water tanker, water shortage, tanker service",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Water, Sewer & Drainage"
+    },
+    {
+      "serviceCode": "BoosterPumpUse",
+      "name": "Use of booster pump",
+      "active": true,
+      "keywords": "booster pump, illegal pump, suction pump issue",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Water, Sewer & Drainage"
+    },
+    {
+      "serviceCode": "ShortageOfWaterSupply",
+      "name": "Shortage of water supply",
+      "active": true,
+      "keywords": "water shortage, low supply, insufficient water",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Water, Sewer & Drainage"
+    },
+    {
+      "serviceCode": "ContaminatedWaterSupply",
+      "name": "Contaminated water supply",
+      "active": true,
+      "keywords": "dirty water, unsafe water, contamination, water quality issue",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Water, Sewer & Drainage"
+    },
+    {
+      "serviceCode": "BurstWaterMain",
+      "name": "Burst water main",
+      "active": true,
+      "keywords": "burst water pipe, main line leak, pipe breakage",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Water, Sewer & Drainage"
+    },
+    {
+      "serviceCode": "PipelineLeakage",
+      "name": "Pipeline leakage",
+      "active": true,
+      "keywords": "pipeline leak, water pipe leakage, repair",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Water, Sewer & Drainage"
+    },
+    {
+      "serviceCode": "LowPressureWater",
+      "name": "Low pressure",
+      "active": true,
+      "keywords": "water pressure low, weak water flow, water supply issue",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Water, Sewer & Drainage"
+    },
+
+    {
+      "serviceCode": "WaterMeterRemoval",
+      "name": "Removal of water meter",
+      "active": true,
+      "keywords": "water meter removal, connection issue, meter problem",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Water, Sewer & Drainage"
+    },
+    {
+      "serviceCode": "UnauthorizedUseOfWater",
+      "name": "Unauthorized use of water – change of user",
+      "active": true,
+      "keywords": "unauthorized water use, illegal connection, change of user",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Water, Sewer & Drainage"
+    },
+    {
+      "serviceCode": "UnauthorizedTappingWaterConnection",
+      "name": "Unauthorized tapping of water connection",
+      "active": true,
+      "keywords": "illegal water tapping, unauthorized connection, pipeline tapping",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Water, Sewer & Drainage"
+    },
+
+    {
+      "serviceCode": "BrokenChambersGeneral",
+      "name": "Broken chambers",
+      "active": true,
+      "keywords": "broken chamber, sewer chamber, drainage work",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Water, Sewer & Drainage"
+    },
+    {
+      "serviceCode": "MissingManholeCoversGeneral",
+      "name": "Missing manhole covers",
+      "active": true,
+      "keywords": "missing manhole, open manhole, danger, cover missing",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Water, Sewer & Drainage"
+    },
+    {
+      "serviceCode": "DisputeInWaterBill",
+      "name": "Dispute in water bill",
+      "active": true,
+      "keywords": "water bill dispute, wrong billing, meter error",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Water, Sewer & Drainage"
+    },
+    {
+      "serviceCode": "GreenGarbageCollection",
+      "name": "Green garbage collection",
+      "active": true,
+      "keywords": "green waste, garden waste, leaf waste, garbage collection",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Sanitation and Cleanliness"
+    },
+    {
+      "serviceCode": "TrafficIslandCleaning",
+      "name": "Cleaning and maintenance of traffic islands and divider",
+      "active": true,
+      "keywords": "traffic island cleaning, divider cleaning, landscape maintenance",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Sanitation and Cleanliness"
+    },
+    {
+      "serviceCode": "GeneralCleanlinessNMCHospital",
+      "name": "General Cleanliness in NMC Hospital",
+      "active": true,
+      "keywords": "hospital cleanliness, sanitation, medical facility cleaning",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Sanitation and Cleanliness"
+    },
+    {
+      "serviceCode": "GardenWasteNotCollected",
+      "name": "Garden Waste Not Collected",
+      "active": true,
+      "keywords": "garden waste, green waste, not collected, garbage",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Sanitation and Cleanliness"
+    },
+    {
+      "serviceCode": "OdourCompostPlant",
+      "name": "Odour smell in compost plant",
+      "active": true,
+      "keywords": "compost smell, bad odour, waste plant smell",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Sanitation and Cleanliness"
+    },
+    {
+      "serviceCode": "SmokingPublicPlaces",
+      "name": "Smoking at Public Places",
+      "active": true,
+      "keywords": "public smoking, no smoking, smoking violation, health hazard",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Sanitation and Cleanliness"
+    },
+    {
+      "serviceCode": "StagnantWaterBodies",
+      "name": "Stagnant water bodies",
+      "active": true,
+      "keywords": "stagnant water, mosquito breeding, water logging",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Sanitation and Cleanliness"
+    },
+    {
+      "serviceCode": "PublicToiletsNotClean",
+      "name": "Toilets are not clean",
+      "active": true,
+      "keywords": "public toilet dirty, unclean toilet, sanitation issue",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Sanitation and Cleanliness"
+    },
+    {
+      "serviceCode": "NoToiletAttendant",
+      "name": "No attendant at public toilets",
+      "active": true,
+      "keywords": "toilet attendant missing, public toilet management issue",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Sanitation and Cleanliness"
+    },
+    {
+      "serviceCode": "ToiletOdour",
+      "name": "Odour from toilets",
+      "active": true,
+      "keywords": "toilet smell, bad odour, restroom hygiene",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Sanitation and Cleanliness"
+    },
+    {
+      "serviceCode": "OpenDefecation",
+      "name": "Open defecation in public area",
+      "active": true,
+      "keywords": "open defecation, sanitation violation, public hygiene issue",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Sanitation and Cleanliness"
+    },
+    {
+      "serviceCode": "LitteringOpenPlot",
+      "name": "Littering in open plot",
+      "active": true,
+      "keywords": "littering, garbage dumping, dirty open plot",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Sanitation and Cleanliness"
     },
     {
       "serviceCode": "BurningOfGarbage",
       "name": "Burning of garbage",
-      "keywords": "garbage, remove, burn, fire, health, waste, smoke, plastic, illegal",
+      "active": true,
+      "keywords": "garbage burning, smoke, waste burning, pollution",
       "department": "DEPT_3",
       "slaHours": 336,
-      "menuPath": "Garbage",
-      "active": true
+      "menuPath": "Sanitation and Cleanliness"
     },
     {
-      "serviceCode": "OverflowingOrBlockedDrain",
-      "name": "Overflowing/Blocked drain",
-      "keywords": "drain, block, clean, debris, silt, drainage, water, clean, roadside, flow, remove, waste, garbage, clear, overflow, canal, fill, stagnate, rain, sanitation, sand, pipe, clog, stuck",
+      "serviceCode": "DebrisToBeLifted",
+      "name": "Debris / Debrege to be lifted",
+      "active": true,
+      "keywords": "debris removal, waste lifting, construction waste",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Sanitation and Cleanliness"
+    },
+    {
+      "serviceCode": "RoadSweepingNotDone",
+      "name": "Road sweeping not done",
+      "active": true,
+      "keywords": "road sweeping, street cleaning, sanitation not done",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Sanitation and Cleanliness"
+    },
+    {
+      "serviceCode": "GarbageVehicleLate",
+      "name": "Garbage vehicle not reported in time",
+      "active": true,
+      "keywords": "garbage vehicle late, collection delay, sanitation issue",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Sanitation and Cleanliness"
+    },
+    {
+      "serviceCode": "GarbageNotLiftedMarket",
+      "name": "Garbage not lifted from Municipal & Private market",
+      "active": true,
+      "keywords": "market garbage, waste not collected, sanitation failure",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Sanitation and Cleanliness"
+    },
+    {
+      "serviceCode": "GarbageNotLiftedSociety",
+      "name": "Garbage not lifted from Housing Society",
+      "active": true,
+      "keywords": "society garbage not picked, sanitation issue, waste problem",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Sanitation and Cleanliness"
+    },
+    {
+      "serviceCode": "CollectionPointsNotAttended",
+      "name": "Collection points not attended properly",
+      "active": true,
+      "keywords": "collection point issue, garbage point unattended, sanitation lapse",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Sanitation and Cleanliness"
+    },
+    {
+      "serviceCode": "GarbageBinOverflow",
+      "name": "Garbage bin overflow",
+      "active": true,
+      "keywords": "overflowing bin, garbage overflow, dustbin full, sanitation issue",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Sanitation and Cleanliness"
+    },
+    {
+      "serviceCode": "WrongAssessmentPropertyTax",
+      "name": "Wrong assessment of property tax",
+      "active": true,
+      "keywords": "property tax, wrong assessment, incorrect tax, reassessment, error",
+      "department": "DEPT_13",
+      "slaHours": 336,
+      "menuPath": "Taxes and charges"
+    },
+    {
+      "serviceCode": "AssessmentAppliedButNotDone",
+      "name": "Applied for assessment but still not done",
+      "active": true,
+      "keywords": "property assessment pending, assessment delay, tax assessment not done",
+      "department": "DEPT_13",
+      "slaHours": 336,
+      "menuPath": "Taxes and charges"
+    },
+    {
+      "serviceCode": "PropertyTaxBillDispute",
+      "name": "Dispute related to bills",
+      "active": true,
+      "keywords": "bill dispute, property tax bill issue, wrong bill, correction needed",
+      "department": "DEPT_13",
+      "slaHours": 336,
+      "menuPath": "Taxes and charges"
+    },
+    {
+      "serviceCode": "IllegalPropertyTransfer",
+      "name": "Illegal transfer of property",
+      "active": true,
+      "keywords": "illegal property transfer, unauthorized transfer, wrong mutation",
+      "department": "DEPT_13",
+      "slaHours": 336,
+      "menuPath": "Taxes and charges"
+    },
+    {
+      "serviceCode": "WrongAssessmentLBT",
+      "name": "Wrong assessment of LBT tax",
+      "active": true,
+      "keywords": "LBT tax, wrong assessment, incorrect LBT, reassessment required",
+      "department": "DEPT_13",
+      "slaHours": 336,
+      "menuPath": "Taxes and charges"
+    },
+    {
+      "serviceCode": "UnauthorizedDealer",
+      "name": "Unauthorized dealer",
+      "active": true,
+      "keywords": "unauthorized dealer, LBT violation, unregistered dealer",
+      "department": "DEPT_13",
+      "slaHours": 336,
+      "menuPath": "Taxes and charges"
+    },
+    {
+      "serviceCode": "StopLineBeforeZebraCrossing",
+      "name": "Stop line at signal before zebra crossing",
+      "active": true,
+      "keywords": "stop line, zebra crossing, traffic marking, road marking, signal",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Road & traffic"
+    },
+    {
+      "serviceCode": "ZebraCrossingRequired",
+      "name": "Zebra crossing required",
+      "active": true,
+      "keywords": "zebra crossing needed, pedestrian crossing, road marking",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Road & traffic"
+    },
+    {
+      "serviceCode": "SignageBoardRequired",
+      "name": "Signage board required",
+      "active": true,
+      "keywords": "sign board, traffic sign, road signage, missing sign, road safety",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Road & traffic"
+    },
+    {
+      "serviceCode": "ParkingLineRequired",
+      "name": "Parking line required",
+      "active": true,
+      "keywords": "parking line, road marking, vehicle parking marking",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Road & traffic"
+    },
+    {
+      "serviceCode": "SpeedBreakerRequired",
+      "name": "Speed breakers required / rectification",
+      "active": true,
+      "keywords": "speed breaker, hump repair, speed bump, road safety",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Road & traffic"
+    },
+    {
+      "serviceCode": "RoadNamePlatesMissing",
+      "name": "Unavailability of name plates on roads",
+      "active": true,
+      "keywords": "road name plate missing, street name board, sign board missing",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Road & traffic"
+    },
+    {
+      "serviceCode": "ReinstatementOfTrenches",
+      "name": "Reinstatement of trenches",
+      "active": true,
+      "keywords": "road trench, reinstatement, digging repair, road patching",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Road & traffic"
+    },
+    {
+      "serviceCode": "RoadRepairs",
+      "name": "Repairs of roads",
+      "active": true,
+      "keywords": "road repair, patch work, damaged road, resurfacing",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Road & traffic"
+    },
+    {
+      "serviceCode": "LanePaintingDull",
+      "name": "Lane painting has gone dull",
+      "active": true,
+      "keywords": "lane marking faded, repaint lane, road marking dull",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Road & traffic"
+    },
+    {
+      "serviceCode": "UnauthorizedDiggingRoad",
+      "name": "Unauthorized digging on roads",
+      "active": true,
+      "keywords": "illegal digging, unauthorized excavation, road cutting",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Road & traffic"
+    },
+    {
+      "serviceCode": "PotholesOnRoad",
+      "name": "Potholes on roads",
+      "active": true,
+      "keywords": "potholes, road damage, road repair, patch work",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Road & traffic"
+    },
+    {
+      "serviceCode": "FootpathResurfacing",
+      "name": "Repairs / resurfacing of footpath",
+      "active": true,
+      "keywords": "footpath repair, pavement resurfacing, damaged walkway",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Road & traffic"
+    },
+    {
+      "serviceCode": "UnauthorizedParkingOnFootpath",
+      "name": "Unauthorized parking of vehicles on footpath",
+      "active": true,
+      "keywords": "illegal parking, footpath parking, obstruction, pedestrian safety",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Road & traffic"
+    },
+    {
+      "serviceCode": "DamagedFootpath",
+      "name": "Damaged footpath",
+      "active": true,
+      "keywords": "broken footpath, damaged pavement, walkway repair",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Road & traffic"
+    },
+    {
+      "serviceCode": "IllegalDebrisDumpingRoad",
+      "name": "Illegal debris dumping on open plot, road and footpath",
+      "active": true,
+      "keywords": "debris dumping, illegal dumping, road waste, open plot dumping",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Road & traffic"
+    },
+    {
+      "serviceCode": "BiomedicalWasteDisposalIssue",
+      "name": "Issue related to Biomedical waste disposal",
+      "active": true,
+      "keywords": "biomedical waste, disposal issue, hospital waste, medical waste management",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Medical and Health"
+    },
+    {
+      "serviceCode": "CarelessTreatmentFacility",
+      "name": "Careless treatment at facility",
+      "active": true,
+      "keywords": "careless treatment, medical negligence, hospital care issue",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Medical and Health"
+    },
+    {
+      "serviceCode": "WaterBorneDiseaseIssue",
+      "name": "Issue related to water borne diseases",
+      "active": true,
+      "keywords": "water borne disease, contamination, health risk, infection",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Medical and Health"
+    },
+    {
+      "serviceCode": "BogusDoctorSuspicion",
+      "name": "Suspicion about degree of general medical practitioner (Bogus Doctor) in NMC area",
+      "active": true,
+      "keywords": "bogus doctor, fake degree, unqualified doctor, medical fraud",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Medical and Health"
+    },
+    {
+      "serviceCode": "UnregisteredMTPCentre",
+      "name": "Issues related to running unregistered MTP centre",
+      "active": true,
+      "keywords": "unregistered MTP center, illegal clinic, unauthorized medical practice",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Medical and Health"
+    },
+    {
+      "serviceCode": "SexDeterminationDisclosure",
+      "name": "Disclosure of sex of baby to patient/relatives by any means",
+      "active": true,
+      "keywords": "sex determination, illegal disclosure, prenatal sex reveal, PC-PNDT violation",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Medical and Health"
+    },
+    {
+      "serviceCode": "UnregisteredSonographyCentre",
+      "name": "Issues related to running unregistered sonography centre",
+      "active": true,
+      "keywords": "unregistered sonography, illegal ultrasound center, PC-PNDT violation",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Medical and Health"
+    },
+    {
+      "serviceCode": "UnregisteredHospital",
+      "name": "Issues related to Running unregistered hospital",
+      "active": true,
+      "keywords": "unregistered hospital, illegal medical facility, unauthorized healthcare",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Medical and Health"
+    },
+    {
+      "serviceCode": "QualifiedNursingStaffIssue",
+      "name": "Issues related to qualified Nursing staff",
+      "active": true,
+      "keywords": "nursing staff issue, unqualified nurse, hospital staff complaint",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Medical and Health"
+    },
+    {
+      "serviceCode": "ImproperBehaviourHospitalStaff",
+      "name": "Improper behaviour of NMC Hospital staff",
+      "active": true,
+      "keywords": "hospital staff behaviour, misconduct, rude behaviour, complaint",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Medical and Health"
+    },
+    {
+      "serviceCode": "NegligenceMedicalStaff",
+      "name": "Negligence of Service by Medical & Paramedical Staff",
+      "active": true,
+      "keywords": "medical negligence, paramedical issue, poor service, hospital complaint",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Medical and Health"
+    },
+    {
+      "serviceCode": "SonographyService",
+      "name": "Sonography Service",
+      "active": true,
+      "keywords": "sonography service, ultrasound issue, diagnostic issue, scan problem",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Medical and Health"
+    },
+    {
+      "serviceCode": "MedicineNotAvailable",
+      "name": "Non Availability of Medicine",
+      "active": true,
+      "keywords": "medicine unavailable, drug shortage, hospital pharmacy issue",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Medical and Health"
+    },
+    {
+      "serviceCode": "IrregularAntiLarvalActivity",
+      "name": "Irregular anti-larval activity",
+      "active": true,
+      "keywords": "anti larval activity, mosquito control, irregular spraying, health risk",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Medical and Health"
+    },
+    {
+      "serviceCode": "SuspectedMalariaDengue",
+      "name": "Suspected malaria/dengue cases",
+      "active": true,
+      "keywords": "malaria case, dengue case, fever, suspected mosquito disease",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Medical and Health"
+    },
+    {
+      "serviceCode": "MosquitoNuisance",
+      "name": "Mosquito nuisance",
+      "active": true,
+      "keywords": "mosquito menace, mosquito problem, vector control, health issue",
+      "department": "DEPT_3",
+      "slaHours": 336,
+      "menuPath": "Medical and Health"
+    },
+    {
+      "serviceCode": "NonMaintenanceMunicipalPremises",
+      "name": "Non maintenance of premises of Municipal property or building",
+      "active": true,
+      "keywords": "municipal building maintenance, premises not maintained, infrastructure repair",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Infrastructure & services"
+    },
+    {
+      "serviceCode": "RentRelatedMunicipalProperty",
+      "name": "Pertaining to rent regarding Municipal property",
+      "active": true,
+      "keywords": "municipal property rent, rent dispute, property rental issues",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Infrastructure & services"
+    },
+    {
+      "serviceCode": "AirPollutionRelated",
+      "name": "Air Pollution related",
+      "active": true,
+      "keywords": "air pollution, smoke, dust, environment issue, pollution complaint",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Infrastructure & services"
+    },
+    {
+      "serviceCode": "NmcEstateProperties",
+      "name": "About NMC Estate / Properties",
+      "active": true,
+      "keywords": "NMC estate, municipal property, estate issues, infrastructure",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Infrastructure & services"
+    },
+    {
+      "serviceCode": "IllegalCuttingOfTreesInfra",
+      "name": "Illegal cutting of trees",
+      "active": true,
+      "keywords": "tree cutting, illegal tree removal, environmental violation",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Infrastructure & services"
+    },
+    {
+      "serviceCode": "GardenMaintenance",
+      "name": "Maintenance of garden",
+      "active": true,
+      "keywords": "garden maintenance, park upkeep, landscaping, greenery",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Infrastructure & services"
+    },
+    {
+      "serviceCode": "FallenTreeInfrastructure",
+      "name": "Fallen tree",
+      "active": true,
+      "keywords": "fallen tree, tree collapse, obstruction removal, storm damage",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Infrastructure & services"
+    },
+    {
+      "serviceCode": "BenchesNotClean",
+      "name": "Benches are not clean",
+      "active": true,
+      "keywords": "dirty benches, park benches, maintenance issue",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Infrastructure & services"
+    },
+    {
+      "serviceCode": "BranchTrimming",
+      "name": "Trimming of branches",
+      "active": true,
+      "keywords": "tree trimming, pruning, branch cutting, greenery maintenance",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Infrastructure & services"
+    },
+    {
+      "serviceCode": "GreenGymRepair",
+      "name": "Repair of broken green gym instrument",
+      "active": true,
+      "keywords": "green gym repair, outdoor gym equipment, fitness equipment damage",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Infrastructure & services"
+    },
+    {
+      "serviceCode": "PlayArticleRepair",
+      "name": "Repairing play articles and play instruments",
+      "active": true,
+      "keywords": "playground repair, play equipment, swings, slides, park equipment",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Infrastructure & services"
+    },
+    {
+      "serviceCode": "FountainSprinkleRepair",
+      "name": "Repairing of fountain, sprinkle system",
+      "active": true,
+      "keywords": "fountain repair, sprinkler system, water feature repair",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Infrastructure & services"
+    },
+    {
+      "serviceCode": "VehicleMaintenance",
+      "name": "Vehicle Maintenance",
+      "active": true,
+      "keywords": "vehicle repair, municipal vehicle maintenance, fleet service",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Infrastructure & services"
+    },
+    {
+      "serviceCode": "BorewellElectricPumpRepair",
+      "name": "Borewell Electric and Hand Pump Repairing",
+      "active": true,
+      "keywords": "borewell repair, hand pump repair, pump maintenance",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Infrastructure & services"
+    },
+    {
+      "serviceCode": "HospitalLinenLaundryService",
+      "name": "Patient & Hospital Linen & Laundry Service",
+      "active": true,
+      "keywords": "hospital linen, laundry service, hospital hygiene, patient linen",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Infrastructure & services"
+    },
+    {
+      "serviceCode": "PatientDietCanteenService",
+      "name": "Patient Diet & Canteen Services in Hospitals",
+      "active": true,
+      "keywords": "hospital canteen, patient food service, diet service issue",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Infrastructure & services"
+    },
+    {
+      "serviceCode": "GroundRelatedGrievances",
+      "name": "Ground Related Grievances",
+      "active": true,
+      "keywords": "ground issue, playground maintenance, sports ground repair",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Infrastructure & services"
+    },
+    {
+      "serviceCode": "SportRelatedGrievances",
+      "name": "Sport Related Grievances",
+      "active": true,
+      "keywords": "sports facility issue, ground problem, sports management complaint",
+      "department": "DEPT_2",
+      "slaHours": 336,
+      "menuPath": "Infrastructure & services"
+    },
+    {
+      "serviceCode": "WaghadiRemovePanveli",
+      "name": "Waghadi - Remove panveli in river basin",
+      "active": true,
+      "keywords": "waghadi, river basin, panveli removal, river cleaning, obstruction removal",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Waghadi Stream"
+    },
+    {
+      "serviceCode": "WaghadiRemoveGarbage",
+      "name": "Waghadi - Remove garbage/nirmalya/plastic in and around river",
+      "active": true,
+      "keywords": "waghadi, garbage removal, nirmalya, plastic waste, river cleanup",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Waghadi Stream"
+    },
+    {
+      "serviceCode": "WaghadiRemoveDebris",
+      "name": "Waghadi - Remove falling of debris in and around river",
+      "active": true,
+      "keywords": "waghadi, debris removal, riverbank cleaning, waste clearance",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Waghadi Stream"
+    },
+    {
+      "serviceCode": "WaghadiSecurityGuards",
+      "name": "Waghadi - Regarding lack of security guards near river basin",
+      "active": true,
+      "keywords": "waghadi, river security, guard deployment, safety, surveillance",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Waghadi Stream"
+    },
+    {
+      "serviceCode": "WaghadiWashingInRiver",
+      "name": "Waghadi - Washing cloths/utensils/vehicles and animals in river basin",
+      "active": true,
+      "keywords": "waghadi, washing in river, pollution, hygiene, prohibition",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Waghadi Stream"
+    },
+    {
+      "serviceCode": "WaghadiTreesNearRiver",
+      "name": "Waghadi - Regarding the trees near river",
+      "active": true,
+      "keywords": "waghadi, river trees, plantation, trimming, protection, greenery",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Waghadi Stream"
+    },
+    {
+      "serviceCode": "WaghadiEncroachmentInRiver",
+      "name": "Waghadi - Regarding encroachment in river",
+      "active": true,
+      "keywords": "waghadi, river encroachment, illegal construction, removal, obstruction",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Waghadi Stream"
+    },
+    {
+      "serviceCode": "WaghadiDeadFishAnimals",
+      "name": "Waghadi - About dead fish & animal in river or around river",
+      "active": true,
+      "keywords": "waghadi, dead fish, dead animals, river pollution, carcass removal",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Waghadi Stream"
+    },
+    {
+      "serviceCode": "WaghadiMosquitoGenesis",
+      "name": "Waghadi - About the genesis of mosquitoes near river",
+      "active": true,
+      "keywords": "waghadi, mosquito breeding, larvae, vector control, stagnant water",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Waghadi Stream"
+    },
+    {
+      "serviceCode": "WaghadiCompanyEffluent",
+      "name": "Waghadi - Contaminated water released from companies in river basin",
+      "active": true,
+      "keywords": "waghadi, industrial effluent, contaminated discharge, pollution source",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Waghadi Stream"
+    },
+    {
+      "serviceCode": "WaghadiSTPDischarge",
+      "name": "Waghadi - Regarding water released from STP plant in river basin",
+      "active": true,
+      "keywords": "waghadi, STP discharge, treated sewage, overflow, river water quality",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Waghadi Stream"
+    },
+    {
+      "serviceCode": "ValdeviRemovePanveli",
+      "name": "Valdevi - Remove panveli in river basin",
+      "active": true,
+      "keywords": "valdevi, river basin, panveli removal, river cleaning, obstruction removal",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Valdevi Stream"
+    },
+    {
+      "serviceCode": "ValdeviRemoveGarbage",
+      "name": "Valdevi - Remove garbage/nirmalya/plastic in and around river",
+      "active": true,
+      "keywords": "valdevi, garbage removal, nirmalya, plastic waste, river cleanup",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Valdevi Stream"
+    },
+    {
+      "serviceCode": "ValdeviRemoveDebris",
+      "name": "Valdevi - Remove falling of debris in and around river",
+      "active": true,
+      "keywords": "valdevi, debris removal, riverbank cleaning, waste clearance",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Valdevi Stream"
+    },
+    {
+      "serviceCode": "ValdeviSecurityGuards",
+      "name": "Valdevi - Regarding lack of security guards near river basin",
+      "active": true,
+      "keywords": "valdevi, river security, guard shortage, safety, surveillance",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Valdevi Stream"
+    },
+    {
+      "serviceCode": "ValdeviWashingInRiver",
+      "name": "Valdevi - Washing cloths/utensils/vehicles and animals in river basin",
+      "active": true,
+      "keywords": "valdevi, washing in river, pollution, hygiene violation, contamination",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Valdevi Stream"
+    },
+    {
+      "serviceCode": "ValdeviTreesNearRiver",
+      "name": "Valdevi - Regarding the trees near river",
+      "active": true,
+      "keywords": "valdevi, river trees, plantation concern, greenery, trimming",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Valdevi Stream"
+    },
+    {
+      "serviceCode": "ValdeviEncroachmentInRiver",
+      "name": "Valdevi - Regarding encroachment in river",
+      "active": true,
+      "keywords": "valdevi, river encroachment, illegal structures, obstruction, riverbank violation",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Valdevi Stream"
+    },
+    {
+      "serviceCode": "ValdeviDeadFishAnimals",
+      "name": "Valdevi - About dead fish & animal in river or around river",
+      "active": true,
+      "keywords": "valdevi, dead fish, dead animals, river pollution, carcass removal",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Valdevi Stream"
+    },
+    {
+      "serviceCode": "ValdeviMosquitoGenesis",
+      "name": "Valdevi - About the genesis of mosquitoes near river",
+      "active": true,
+      "keywords": "valdevi, mosquito breeding, larvae, stagnant water, vector control",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Valdevi Stream"
+    },
+    {
+      "serviceCode": "ValdeviCompanyEffluent",
+      "name": "Valdevi - Contaminated water released from companies in river basin",
+      "active": true,
+      "keywords": "valdevi, industrial discharge, contaminated water, pollution source, effluent",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Valdevi Stream"
+    },
+    {
+      "serviceCode": "ValdeviSTPDischarge",
+      "name": "Valdevi - Regarding water released from STP plant in river basin",
+      "active": true,
+      "keywords": "valdevi, STP discharge, treated sewage, overflow, river pollution",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Valdevi Stream"
+    },
+    {
+      "serviceCode": "NandiniRemovePanveli",
+      "name": "Nandini - Remove panveli in river basin",
+      "active": true,
+      "keywords": "nandini, river basin, panveli removal, river cleaning, obstruction removal",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Nandini Stream"
+    },
+    {
+      "serviceCode": "NandiniRemoveGarbage",
+      "name": "Nandini - Remove garbage/nirmalya/plastic in and around river",
+      "active": true,
+      "keywords": "nandini, garbage removal, nirmalya, plastic waste, river cleanup",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Nandini Stream"
+    },
+    {
+      "serviceCode": "NandiniRemoveDebris",
+      "name": "Nandini - Remove falling of debris in and around river",
+      "active": true,
+      "keywords": "nandini, debris removal, river cleaning, waste clearance, riverbank debris",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Nandini Stream"
+    },
+    {
+      "serviceCode": "NandiniSecurityGuards",
+      "name": "Nandini - Regarding lack of security guards near river basin",
+      "active": true,
+      "keywords": "nandini, river security, guard shortage, safety, surveillance",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Nandini Stream"
+    },
+    {
+      "serviceCode": "NandiniWashingInRiver",
+      "name": "Nandini - Washing cloths, utensils, vehicles and animals in river basin",
+      "active": true,
+      "keywords": "nandini, washing in river, pollution, hygiene violation, contamination",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Nandini Stream"
+    },
+    {
+      "serviceCode": "NandiniTreesNearRiver",
+      "name": "Nandini - Regarding the trees near river",
+      "active": true,
+      "keywords": "nandini, river trees, greenery, plantation, trimming, tree inspection",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Nandini Stream"
+    },
+    {
+      "serviceCode": "NandiniEncroachmentInRiver",
+      "name": "Nandini - Regarding encroachment in river",
+      "active": true,
+      "keywords": "nandini, river encroachment, illegal structures, water obstruction",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Nandini Stream"
+    },
+    {
+      "serviceCode": "NandiniDeadFishAnimals",
+      "name": "Nandini - About dead fish & animal in river or around river",
+      "active": true,
+      "keywords": "nandini, dead fish, dead animals, river pollution, carcass removal",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Nandini Stream"
+    },
+    {
+      "serviceCode": "NandiniMosquitoGenesis",
+      "name": "Nandini - About the Genesis of mosquitoes near river",
+      "active": true,
+      "keywords": "nandini, mosquito breeding, larvae, stagnant water, vector control",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Nandini Stream"
+    },
+    {
+      "serviceCode": "NandiniCompanyEffluent",
+      "name": "Nandini - Contaminated water released from companies in river basin",
+      "active": true,
+      "keywords": "nandini, company effluent, industrial discharge, polluted water, contamination",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Nandini Stream"
+    },
+    {
+      "serviceCode": "NandiniSTPDischarge",
+      "name": "Nandini - Regarding water released from STP plant in river basin",
+      "active": true,
+      "keywords": "nandini, STP discharge, sewage release, water quality issue, pollution",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Nandini Stream"
+    },
+    {
+      "serviceCode": "GodavariSTPDischarge",
+      "name": "Godavari - Regarding water released from STP plant in river basin",
+      "active": true,
+      "keywords": "godavari, STP discharge, sewage release, treated water, pollution issue",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Godavari Stream"
+    },
+    {
+      "serviceCode": "GodavariCompanyEffluent",
+      "name": "Godavari - Contaminated water released from companies in river basin",
+      "active": true,
+      "keywords": "godavari, industrial discharge, contaminated water, pollution, effluent",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Godavari Stream"
+    },
+    {
+      "serviceCode": "GodavariMosquitoGenesis",
+      "name": "Godavari - About the Genesis of mosquitoes near river",
+      "active": true,
+      "keywords": "godavari, mosquito breeding, larvae, stagnant water, vector control",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Godavari Stream"
+    },
+    {
+      "serviceCode": "GodavariDeadFishAnimals",
+      "name": "Godavari - About dead fish & animal in river or around river",
+      "active": true,
+      "keywords": "godavari, dead fish, dead animals, river pollution, carcass removal",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Godavari Stream"
+    },
+    {
+      "serviceCode": "GodavariEncroachmentInRiver",
+      "name": "Godavari - Regarding encroachment in river",
+      "active": true,
+      "keywords": "godavari, river encroachment, illegal structures, obstruction",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Godavari Stream"
+    },
+    {
+      "serviceCode": "GodavariTreesNearRiver",
+      "name": "Godavari - Regarding the trees near river",
+      "active": true,
+      "keywords": "godavari, river trees, greenery, plantation, trimming, inspection",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Godavari Stream"
+    },
+    {
+      "serviceCode": "GodavariWashingInRiver",
+      "name": "Godavari - Regarding washing cloths, utensils, vehicles and animals in river basin",
+      "active": true,
+      "keywords": "godavari, washing in river, pollution, hygiene issue, contamination",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Godavari Stream"
+    },
+    {
+      "serviceCode": "GodavariSecurityGuards",
+      "name": "Godavari - Regarding lack of security guards near river basin",
+      "active": true,
+      "keywords": "godavari, security guards, river safety, surveillance issue",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Godavari Stream"
+    },
+    {
+      "serviceCode": "GodavariRemoveDebris",
+      "name": "Godavari - Remove falling of debris in and around river",
+      "active": true,
+      "keywords": "godavari, debris removal, riverbank debris, waste clearance",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Godavari Stream"
+    },
+    {
+      "serviceCode": "GodavariRemoveGarbage",
+      "name": "Godavari - Remove garbage/nirmalya/plastic in and around river",
+      "active": true,
+      "keywords": "godavari, garbage removal, plastic waste, nirmalya, river cleanup",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Godavari Stream"
+    },
+    {
+      "serviceCode": "GodavariRemovePanveli",
+      "name": "Godavari - Remove panveli in river basin",
+      "active": true,
+      "keywords": "godavari, panveli removal, river obstruction, cleanup",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Godavari Stream"
+    },
+    {
+      "serviceCode": "GodavariRelatedGrievances",
+      "name": "Godavari Related Grievances",
+      "active": true,
+      "keywords": "godavari river, conservation issue, river complaints, pollution, encroachment",
+      "department": "DEPT_5",
+      "slaHours": 336,
+      "menuPath": "Godavari Conservation: Godavari Stream"
+    },
+    {
+      "serviceCode": "UnauthorizedShedMunicipalBuilding",
+      "name": "Unauthorized shed in Municipal building",
+      "active": true,
+      "keywords": "unauthorized shed, illegal structure, municipal building, encroachment, removal",
       "department": "DEPT_4",
       "slaHours": 336,
-      "menuPath": "Drains",
-      "active": true
+      "menuPath": "Encroachment"
+    },
+    {
+      "serviceCode": "UnauthorizedMaterialFurnitureMunicipalBuilding",
+      "name": "Unauthorized material / furniture found in Municipal building",
+      "active": true,
+      "keywords": "unauthorized material, illegal furniture, municipal building, unauthorized storage",
+      "department": "DEPT_4",
+      "slaHours": 336,
+      "menuPath": "Encroachment"
+    },
+    {
+      "serviceCode": "UnauthorizedAdditionAlterationMunicipalProperty",
+      "name": "Unauthorized addition / alteration in the premises of Municipal property/ Building",
+      "active": true,
+      "keywords": "unauthorized alteration, illegal addition, municipal property, modification, encroachment",
+      "department": "DEPT_4",
+      "slaHours": 336,
+      "menuPath": "Encroachment"
+    },
+    {
+      "serviceCode": "UnauthorizedUseMunicipalProperty",
+      "name": "Unauthorized use of Municipal property",
+      "active": true,
+      "keywords": "unauthorized use, illegal occupation, municipal property misuse, encroachment",
+      "department": "DEPT_4",
+      "slaHours": 336,
+      "menuPath": "Encroachment"
+    },
+    {
+      "serviceCode": "UnauthorizedConstructionMunicipalPlots",
+      "name": "Unauthorized construction Regarding Municipal Plot ex. Playground, Garden etc.",
+      "active": true,
+      "keywords": "unauthorized construction, municipal plot, playground, garden, illegal structure",
+      "department": "DEPT_4",
+      "slaHours": 336,
+      "menuPath": "Encroachment"
+    },
+    {
+      "serviceCode": "ShopsEncroachment",
+      "name": "Shops",
+      "active": true,
+      "keywords": "unauthorized shop, illegal shop, stall encroachment, eviction, seizure",
+      "department": "DEPT_4",
+      "slaHours": 336,
+      "menuPath": "Encroachment"
+    },
+    {
+      "serviceCode": "RoadMaterialEncroachment",
+      "name": "Road Material",
+      "active": true,
+      "keywords": "road material stack, debris on road, obstruction, removal, encroachment",
+      "department": "DEPT_4",
+      "slaHours": 336,
+      "menuPath": "Encroachment"
+    },
+    {
+      "serviceCode": "AdvertisementEncroachment",
+      "name": "Advertisement",
+      "active": true,
+      "keywords": "unauthorized advertisement, illegal hoarding, banner, board, removal, seizure",
+      "department": "DEPT_4",
+      "slaHours": 336,
+      "menuPath": "Encroachment"
+    },
+    {
+      "serviceCode": "TapariEncroachment",
+      "name": "Tapari",
+      "active": true,
+      "keywords": "tapri, kiosk, unauthorized stall, illegal hawker, encroachment removal",
+      "department": "DEPT_4",
+      "slaHours": 336,
+      "menuPath": "Encroachment"
+    },
+
+    {
+      "serviceCode": "IllegalConstructionPrivateProperty",
+      "name": "Illegal construction on private property",
+      "active": true,
+      "keywords": "illegal construction, private property, unauthorized building, demolition, notice",
+      "department": "DEPT_4",
+      "slaHours": 336,
+      "menuPath": "Encroachment"
+    },
+    {
+      "serviceCode": "UnauthorizedStallsRoadFootpathSWD",
+      "name": "Unauthorized stalls on road ,footpath or SWD",
+      "active": true,
+      "keywords": "unauthorized stall, hawker on footpath, SWD obstruction, removal, seizure",
+      "department": "DEPT_4",
+      "slaHours": 336,
+      "menuPath": "Encroachment"
+    },
+    {
+      "serviceCode": "UnauthorizedBannersBoardsRoadFootpath",
+      "name": "Unauthorized banner/ advertisement/ boards on roads/ footpath",
+      "active": true,
+      "keywords": "illegal banner, hoarding, sign board, road, footpath, encroachment removal",
+      "department": "DEPT_4",
+      "slaHours": 336,
+      "menuPath": "Encroachment"
+    },
+    {
+      "serviceCode": "EncroachmentInsideSociety",
+      "name": "Encroachment inside society",
+      "active": true,
+      "keywords": "society encroachment, common area, illegal extension, compound alteration",
+      "department": "DEPT_4",
+      "slaHours": 336,
+      "menuPath": "Encroachment"
+    },
+    {
+      "serviceCode": "UnauthorizedHawkersOnFootpath",
+      "name": "Unauthorized hawkers on footpath",
+      "active": true,
+      "keywords": "unauthorized hawker, footpath vending, illegal vending, removal, seizure",
+      "department": "DEPT_4",
+      "slaHours": 336,
+      "menuPath": "Encroachment"
+    },
+    {
+      "serviceCode": "EncroachmentMunicipalLandRoadFootpathGutter",
+      "name": "Encroachment on municipal land / road/ footpath/ gutter",
+      "active": true,
+      "keywords": "municipal land encroachment, road encroachment, gutter obstruction, eviction",
+      "department": "DEPT_4",
+      "slaHours": 336,
+      "menuPath": "Encroachment"
+    },
+
+    {
+      "serviceCode": "IllegalConstructionStateGovtProperty",
+      "name": "Illegal construction on government of Maharashtra property",
+      "active": true,
+      "keywords": "illegal construction, state government land, demolition, unauthorized structure",
+      "department": "DEPT_4",
+      "slaHours": 336,
+      "menuPath": "Encroachment"
+    },
+    {
+      "serviceCode": "IllegalConstructionULBProperty",
+      "name": "Illegal construction on ULBs (corporation) property",
+      "active": true,
+      "keywords": "illegal construction, ULB property, corporation land, demolition, notice",
+      "department": "DEPT_4",
+      "slaHours": 336,
+      "menuPath": "Encroachment"
+    },
+    {
+      "serviceCode": "IllegalConstructionUDCPROtherThanPrivate",
+      "name": "Illegal construction on other than private properties which can be authorized in UDCPR",
+      "active": true,
+      "keywords": "UDCPR, unauthorized construction, planning violation, regularization check, encroachment",
+      "department": "DEPT_4",
+      "slaHours": 336,
+      "menuPath": "Encroachment"
+    },
+
+    {
+      "serviceCode": "EncroachmentInsideSocietyGovtInstitutes",
+      "name": "Encroachment inside society - govt. institutes/ any unauthorized institutes",
+      "active": true,
+      "keywords": "encroachment in institutes, government institute, unauthorized institute, common area",
+      "department": "DEPT_4",
+      "slaHours": 336,
+      "menuPath": "Encroachment"
+    },
+    {
+      "serviceCode": "UnauthorizedHawkersFootpathNULM",
+      "name": "Unauthorized hawkers on footpath - registered in NULM/ two or more register in NULM/ not registered in NULM",
+      "active": true,
+      "keywords": "hawker NULM, unauthorized vending, multiple registrations, footpath encroachment",
+      "department": "DEPT_4",
+      "slaHours": 336,
+      "menuPath": "Encroachment"
+    },
+
+    {
+      "serviceCode": "IllegalReligiousConstructions",
+      "name": "Illegal religious constructions (private and government) (before 2009 and after 2009 as per govt. GR)",
+      "active": true,
+      "keywords": "illegal religious structure, temple, mosque, church, GR 2009, encroachment removal",
+      "department": "DEPT_4",
+      "slaHours": 336,
+      "menuPath": "Encroachment"
+    },
+    {
+      "serviceCode": "ReligiousEncroachmentOnULBLand",
+      "name": "Encroachment of religious construction on ULB road/open spaces/amenities/ any type of land or other structures, other govt. dept other than ULBs, in any private areas.",
+      "active": true,
+      "keywords": "religious encroachment, ULB road, open space, amenities, other govt dept land, private area",
+      "department": "DEPT_4",
+      "slaHours": 336,
+      "menuPath": "Encroachment"
+    },
+    {
+      "serviceCode": "EncroachmentOnBlueFloodLine",
+      "name": "Encroachment on blue line and flood line areas",
+      "active": true,
+      "keywords": "blue line encroachment, flood line encroachment, river zone, demolition, planning violation",
+      "department": "DEPT_4",
+      "slaHours": 336,
+      "menuPath": "Encroachment"
+    },
+
+    {
+      "serviceCode": "IllegalConstructionInSlum",
+      "name": "Illegal Construction in Slum",
+      "active": true,
+      "keywords": "slum illegal construction, unauthorized house, slum encroachment, demolition",
+      "department": "DEPT_4",
+      "slaHours": 336,
+      "menuPath": "Encroachment"
+    },
+    {
+      "serviceCode": "IllegalConstructionUnauthorizedChangeOfUse",
+      "name": "Illegal Construction and unauthorized change of use",
+      "active": true,
+      "keywords": "unauthorized change of use, land use violation, illegal construction, zoning breach",
+      "department": "DEPT_4",
+      "slaHours": 336,
+      "menuPath": "Encroachment"
     },
     {
       "serviceCode": "illegalDischargeOfSewage",
@@ -179,185 +1804,427 @@
       "active": true
     },
     {
-      "serviceCode": "RequestSprayingOrFoggingOperation",
-      "name": "Request spraying/ fogging operations",
-      "keywords": "mosquito, menace, fog, spray, kill, health, dengue, malaria, disease, clean",
-      "department": "DEPT_3",
+      "serviceCode": "AnganwadiComplaints",
+      "name": "Anganwadi Complaints",
+      "active": true,
+      "keywords": "anganwadi, child centre, nutrition, preschool, icds, complaints",
+      "department": "DEPT_58",
       "slaHours": 336,
-      "menuPath": "Mosquitos",
-      "active": true
+      "menuPath": "Education & skill development"
     },
     {
-      "serviceCode": "StrayAnimals",
-      "name": "Stray animals",
-      "keywords": "stray, dog, dogs, menace, animal, animals, attack, attacking, bite, biting, bark, barking",
-      "department": "DEPT_3",
+      "serviceCode": "NoTeacherStaffSchool",
+      "name": "No teacher/ staff in school",
+      "active": true,
+      "keywords": "no teacher, staff shortage, school staffing issue, teacher absence",
+      "department": "DEPT_58",
       "slaHours": 336,
-      "menuPath": "Animals",
-      "active": true
+      "menuPath": "Education & skill development"
     },
     {
-      "serviceCode": "DeadAnimals",
-      "name": "Dead animals",
-      "keywords": "stray, cow, cows, cattle, bull, bulls, graze, grazing, dung, menace",
-      "department": "DEPT_3",
+      "serviceCode": "BrokenFurnitureClass",
+      "name": "Furniture found broken in classes",
+      "active": true,
+      "keywords": "broken furniture, damaged desk, classroom bench repair, school infrastructure",
+      "department": "DEPT_58",
       "slaHours": 336,
-      "menuPath": "Animals",
-      "active": true
+      "menuPath": "Education & skill development"
     },
     {
-      "serviceCode": "DirtyOrSmellyPublicToilets",
-      "name": "Dirty/smelly public toilet",
-      "keywords": "toilet, public, restroom, bathroom, urinal, smell, dirty",
-      "department": "DEPT_3",
+      "serviceCode": "SchoolAdmissionRelated",
+      "name": "Grievances about School Admission, Leaving School, and other school related services",
+      "active": true,
+      "keywords": "school admission, transfer certificate, leaving school, TC, education services",
+      "department": "DEPT_58",
       "slaHours": 336,
-      "menuPath": "PublicToilets",
-      "active": true
+      "menuPath": "Education & skill development"
     },
     {
-      "serviceCode": "PublicToiletIsDamaged",
-      "name": "Public toilet damaged",
-      "keywords": "toilet, public, restroom, bathroom, urinal, block, working",
-      "department": "DEPT_3",
+      "serviceCode": "PrivateSchoolGrievances",
+      "name": "Grievances about Private School",
+      "active": true,
+      "keywords": "private school complaint, fee issue, school management problem",
+      "department": "DEPT_58",
       "slaHours": 336,
-      "menuPath": "PublicToilets",
-      "active": true
+      "menuPath": "Education & skill development"
     },
     {
-      "serviceCode": "NoWaterOrElectricityinPublicToilet",
-      "name": "No water/electricity in public toilet",
-      "keywords": "toilet, public, restroom, bathroom, urinal, electricity, water, working",
-      "department": "DEPT_3",
+      "serviceCode": "TeacherStaffGrievances",
+      "name": "Staff/Teacher related Grievances",
+      "active": true,
+      "keywords": "teacher grievance, staff issue, misconduct, transfer issue, school complaint",
+      "department": "DEPT_58",
       "slaHours": 336,
-      "menuPath": "PublicToilets",
-      "active": true
+      "menuPath": "Education & skill development"
     },
     {
-      "serviceCode": "IllegalShopsOnFootPath",
-      "name": "Illegal shops on footpath",
-      "keywords": "illegal, shop, footpath, violation, property, public, space, land, unathourised, site, construction, wrong",
-      "department": "DEPT_6",
+      "serviceCode": "BadQualityMaterialStudents",
+      "name": "Bad quality of material given to students",
+      "active": true,
+      "keywords": "student kit issue, poor quality books, uniform quality issue, school supplies",
+      "department": "DEPT_58",
       "slaHours": 336,
-      "menuPath": "LandViolations",
-      "active": true
+      "menuPath": "Education & skill development"
     },
     {
-      "serviceCode": "IllegalConstructions",
-      "name": "Illegal constructions",
-      "keywords": "illegal, violation, property, public, space, land, unathourised, site, construction, wrong, build",
-      "department": "DEPT_6",
+      "serviceCode": "ScholarshipNotReceived",
+      "name": "Non reception of Scholarship",
+      "active": true,
+      "keywords": "scholarship not received, education grant pending, student benefit delay",
+      "department": "DEPT_58",
       "slaHours": 336,
-      "menuPath": "LandViolations",
-      "active": true
+      "menuPath": "Education & skill development"
     },
     {
-      "serviceCode": "IllegalParking",
-      "name": "Illegal parking",
-      "keywords": "illegal, parking, car, vehicle, space, removal, road, street, vehicle",
-      "department": "DEPT_6",
+      "serviceCode": "BirthCertificate",
+      "name": "About Birth Certificate",
+      "active": true,
+      "keywords": "birth certificate, registration, name correction, certificate issue",
+      "department": "DEPT_8",
       "slaHours": 336,
-      "menuPath": "LandViolations",
-      "active": true
+      "menuPath": "Civic rights & schemes"
     },
     {
-      "serviceCode": "IllegalCuttingOfTrees",
-      "name": "Illegal Cutting of trees",
-      "keywords": "tree, cut, illegal, unathourized, remove, plant",
-      "department": "DEPT_5",
+      "serviceCode": "SchemesForPwD",
+      "name": "Various Scheme for Child With Disabilities and Persons With Disabilities",
+      "active": true,
+      "keywords": "disability scheme, PwD benefits, child disability support, welfare schemes",
+      "department": "DEPT_8",
       "slaHours": 336,
-      "menuPath": "Trees",
-      "active": true
+      "menuPath": "Civic rights & schemes"
     },
     {
-      "serviceCode": "CuttingOrTrimmingOfTreeRequired",
-      "name": "Cutting/trimming of tree required",
-      "keywords": "tree, remove, trim, fallen, cut, plant, branch",
-      "department": "DEPT_5",
+      "serviceCode": "InterventionFacilityPwD",
+      "name": "Intervention Facility for Persons With Disabilities",
+      "active": true,
+      "keywords": "intervention facility, PwD support, rehabilitation, disability services",
+      "department": "DEPT_8",
       "slaHours": 336,
-      "menuPath": "Trees",
-      "active": true
+      "menuPath": "Civic rights & schemes"
     },
     {
-      "serviceCode": "OpenDefecation",
-      "name": "Open Defecation",
-      "keywords": "open, defecation, waste, human, privy, toilet",
-      "department": "DEPT_3",
+      "serviceCode": "PensionerGrievancesSchoolStaff",
+      "name": "Pensioners Related Grievances for school staff",
+      "active": true,
+      "keywords": "school staff pension, retirement grievances, pension delay, pension issue",
+      "department": "DEPT_8",
       "slaHours": 336,
-      "menuPath": "OpenDefecation",
-      "active": true
+      "menuPath": "Civic rights & schemes"
     },
     {
-      "serviceCode": "ParkRequiresMaintenance",
-      "name": "Park requires maintenance",
-      "keywords": "open, defecation, waste, human, privy, toilet",
-      "department": "DEPT_5",
+      "serviceCode": "SeniorCitizenCenter",
+      "name": "Senior Citizen Center for social welfare",
+      "active": true,
+      "keywords": "senior citizen center, elderly welfare, social care, senior services",
+      "department": "DEPT_8",
       "slaHours": 336,
-      "menuPath": "Parks",
-      "active": true
+      "menuPath": "Civic rights & schemes"
     },
     {
-      "serviceCode": "Others",
-      "name": "Others",
-      "keywords": "other, miscellaneous,ad,playgrounds,burial,slaughterhouse, misc, tax, revenue",
+      "serviceCode": "FinancialAssistanceNotReceived",
+      "name": "Non reception of Financial Assistance for Schemes",
+      "active": true,
+      "keywords": "financial assistance not received, welfare scheme delay, benefit pending",
+      "department": "DEPT_8",
+      "slaHours": 336,
+      "menuPath": "Civic rights & schemes"
+    },
+    {
+      "serviceCode": "MayorTrophyGrievances",
+      "name": "Mayor Trophy Related Grievances",
+      "active": true,
+      "keywords": "mayor trophy, sports event issue, competition grievance, tournament complaint",
+      "department": "DEPT_8",
+      "slaHours": 336,
+      "menuPath": "Civic rights & schemes"
+    },
+    {
+      "serviceCode": "SoftwareMobileAppGrievances",
+      "name": "Software/ Mobile App Related Grievances",
+      "active": true,
+      "keywords": "software issue, mobile app error, application problem, technical glitch, system bug",
       "department": "DEPT_10",
       "slaHours": 336,
-      "menuPath": "",
-      "active": true,
-      "order": 6
+      "menuPath": "Applications and NMC portal"
     },
     {
-    "serviceCode": "PropertyTaxAssessment",
-      "name": "Property Tax Assessment",
-      "keywords": "property, tax, Assessment",
-      "department": "DEPT_13",
+      "serviceCode": "AndroidAppIssues",
+      "name": "Android mobile app issues",
+      "active": true,
+      "keywords": "android app issue, crash, bug, performance problem, loading error",
+      "department": "DEPT_10",
       "slaHours": 336,
-      "menuPath": "PropertyTax",
-      "active": true
-},
-{
-    "serviceCode": "PropertyTaxAppealPetition",
-      "name": "Property Tax Appeal Petition",
-      "keywords": "property, tax, appeal, petition",
-      "department": "DEPT_13",
+      "menuPath": "Applications and NMC portal"
+    },
+    {
+      "serviceCode": "IOSNotCompatible",
+      "name": "IOS not compatible",
+      "active": true,
+      "keywords": "IOS compatibility, iPhone error, app not supported, update required",
+      "department": "DEPT_10",
       "slaHours": 336,
-      "menuPath": "PropertyTax",
-      "active": true
-},
-{
-    "serviceCode": "ChangeOfTitleOrOwnershipOfProperty",
-      "name": "Change of title/ownership of property",
-      "keywords": "property, ownership, title, change",
-      "department": "DEPT_13",
+      "menuPath": "Applications and NMC portal"
+    },
+    {
+      "serviceCode": "AppVersionIssues",
+      "name": "Version issues",
+      "active": true,
+      "keywords": "app version error, update issue, compatibility issue, outdated version",
+      "department": "DEPT_10",
       "slaHours": 336,
-      "menuPath": "PropertyTax",
-      "active": true
-},
-{
-    "serviceCode": "DealerRegistration",
-      "name": "Dealer registration(Cess)",
-      "keywords": "property, dealer, registration",
-      "department": "DEPT_13",
+      "menuPath": "Applications and NMC portal"
+    },
+    {
+      "serviceCode": "LinkNotWorkingServerDown",
+      "name": "Link not working issues / server down",
+      "active": true,
+      "keywords": "server down, link not opening, connection error, backend issue, downtime",
+      "department": "DEPT_10",
       "slaHours": 336,
-      "menuPath": "PropertyTax",
-      "active": true
-},
-{
-    "serviceCode": "DealerAssessment",
-      "name": "Dealer Assessment",
-      "keywords": "property, dealer, assessment",
-      "department": "DEPT_13",
+      "menuPath": "Applications and NMC portal"
+    },
+    {
+      "serviceCode": "GhantagadiTrackingIssue",
+      "name": "Ghantagari tracking not working (GPS issues)",
+      "active": true,
+      "keywords": "gps issue, tracking not working, ghantagadi tracking, location error, map issue",
+      "department": "DEPT_10",
       "slaHours": 336,
-      "menuPath": "PropertyTax",
-      "active": true
-},
-{
-    "serviceCode": "RefundClaims",
-      "name": "Refund Claims",
-      "keywords": "property, refund, Claims",
-      "department": "DEPT_13",
+      "menuPath": "Applications and NMC portal"
+    },
+    {
+      "serviceCode": "WebsiteContentNotUpdated",
+      "name": "Website content not updated",
+      "active": true,
+      "keywords": "website content outdated, update needed, wrong information, website maintenance",
+      "department": "DEPT_10",
       "slaHours": 336,
-      "menuPath": "PropertyTax",
-      "active": true
-}
+      "menuPath": "Applications and NMC portal"
+    },
+    {
+      "serviceCode": "NMCConnectRegistrationIssue",
+      "name": "NMC Connect registration issues",
+      "active": true,
+      "keywords": "registration error, login issue, signup problem, connect app problem",
+      "department": "DEPT_10",
+      "slaHours": 336,
+      "menuPath": "Applications and NMC portal"
+    },
+    {
+      "serviceCode": "HelplineChatbotNotWorking",
+      "name": "Helpline issues / chatbot not working",
+      "active": true,
+      "keywords": "helpline error, chatbot not working, response issue, support unavailable",
+      "department": "DEPT_10",
+      "slaHours": 336,
+      "menuPath": "Applications and NMC portal"
+    },
+    {
+      "serviceCode": "AnimalDead",
+      "name": "Animal Dead",
+      "active": true,
+      "keywords": "dead animal, carcass removal, animal death, pickup, sanitation",
+      "department": "DEPT_59",
+      "slaHours": 336,
+      "menuPath": "Animal & pets"
+    },
+    {
+      "serviceCode": "StrayDogSterilisation",
+      "name": "Issues related to Stray Dogs Sterilisation",
+      "active": true,
+      "keywords": "stray dog, sterilisation, ABC program, dog control, animal birth control",
+      "department": "DEPT_59",
+      "slaHours": 336,
+      "menuPath": "Animal & pets"
+    },
+    {
+      "serviceCode": "StrayingOtherAnimals",
+      "name": "Straying/Roaming of animals other than dogs",
+      "active": true,
+      "keywords": "stray cattle, roaming animals, pigs, goats, nuisance animals, capture",
+      "department": "DEPT_59",
+      "slaHours": 336,
+      "menuPath": "Animal & pets"
+    },
+    {
+      "serviceCode": "StableNuisance",
+      "name": "Nuisance due to stables",
+      "active": true,
+      "keywords": "stable nuisance, cattle shed smell, dung smell, flies, hygiene issues",
+      "department": "DEPT_59",
+      "slaHours": 336,
+      "menuPath": "Animal & pets"
+    },
+    {
+      "serviceCode": "CrueltyToAnimals",
+      "name": "Cruelty to animals",
+      "active": true,
+      "keywords": "animal cruelty, animal abuse, mistreatment, neglect, animal welfare",
+      "department": "DEPT_59",
+      "slaHours": 336,
+      "menuPath": "Animal & pets"
+    },
+    {
+      "serviceCode": "IllegalSlaughterhouse",
+      "name": "Illegal slaughterhouse",
+      "active": true,
+      "keywords": "illegal slaughterhouse, unlicensed meat processing, cruelty, hygiene violation",
+      "department": "DEPT_59",
+      "slaHours": 336,
+      "menuPath": "Animal & pets"
+    },
+    {
+      "serviceCode": "UnlicensedPetDog",
+      "name": "Unlicensed pet dog",
+      "active": true,
+      "keywords": "pet dog license, unregistered dog, license missing, vaccination record",
+      "department": "DEPT_59",
+      "slaHours": 336,
+      "menuPath": "Animal & pets"
+    },
+    {
+      "serviceCode": "RodentNuisance",
+      "name": "Nuisance due to rodents",
+      "active": true,
+      "keywords": "rodents, rats, mice nuisance, infestation, pest control",
+      "department": "DEPT_59",
+      "slaHours": 336,
+      "menuPath": "Animal & pets"
+    },
+    {
+      "serviceCode": "IllegalMeatShopUnhygienic",
+      "name": "Illegal meat shop and issues related to unhygienic conditions",
+      "active": true,
+      "keywords": "illegal meat shop, unhygienic meat, contamination, unlicensed butcher",
+      "department": "DEPT_59",
+      "slaHours": 336,
+      "menuPath": "Animal & pets"
+    },
+    {
+      "serviceCode": "VendorPaymentNotReceived",
+      "name": "Vendor payment not received",
+      "active": true,
+      "keywords": "vendor payment issue, payment pending, bill not received, accounts payment",
+      "department": "DEPT_10",
+      "slaHours": 336,
+      "menuPath": "Payment & receipt"
+    },
+    {
+      "serviceCode": "FireNOCNotReceived",
+      "name": "Fire N.O.C not received",
+      "active": true,
+      "keywords": "fire noc delay, approval pending, fire clearance issue",
+      "department": "DEPT_10",
+      "slaHours": 336,
+      "menuPath": "Payment & receipt"
+    },
+    {
+      "serviceCode": "PropertyWaterTaxPaymentIssue",
+      "name": "Property tax, water tax payment issues / receipt not issued",
+      "active": true,
+      "keywords": "property tax payment, water tax payment, receipt not issued, payment error",
+      "department": "DEPT_10",
+      "slaHours": 336,
+      "menuPath": "Payment & receipt"
+    },
+    {
+      "serviceCode": "OnlinePaymentNotPosted",
+      "name": "Online payment made but not posted",
+      "active": true,
+      "keywords": "online payment, payment not posted, transaction missing, digital payment issue",
+      "department": "DEPT_10",
+      "slaHours": 336,
+      "menuPath": "Payment & receipt"
+    },
+    {
+      "serviceCode": "NoReceiptAfterPayment",
+      "name": "No receipt given after payment",
+      "active": true,
+      "keywords": "receipt missing, payment done no receipt, acknowledgement issue",
+      "department": "DEPT_10",
+      "slaHours": 336,
+      "menuPath": "Payment & receipt"
+    },
+    {
+      "serviceCode": "IncorrectReceiptDetails",
+      "name": "Incorrect details in receipt",
+      "active": true,
+      "keywords": "receipt error, wrong details, bill correction, tax receipt issue",
+      "department": "DEPT_10",
+      "slaHours": 336,
+      "menuPath": "Payment & receipt"
+    },
+    {
+      "serviceCode": "WaterLoggingRoad",
+      "name": "Water Logging on the road",
+      "active": true,
+      "keywords": "water logging, road flooding, civic safety issue, road blockage",
+      "department": "DEPT_10",
+      "slaHours": 336,
+      "menuPath": "Civic safety & Disaster"
+    },
+    {
+      "serviceCode": "BeneficiaryComplaintSlum",
+      "name": "Beneficary Complaint",
+      "active": true,
+      "keywords": "slum beneficiary, scheme benefit issue, slum complaint, housing support",
+      "department": "DEPT_10",
+      "slaHours": 336,
+      "menuPath": "Housing"
+    },
+    {
+      "serviceCode": "BSUPSchemeComplaint",
+      "name": "B.S.U.P. Housing Scheme Complaints",
+      "active": true,
+      "keywords": "bsup scheme, slum housing issue, housing complaint, scheme grievance",
+      "department": "DEPT_10",
+      "slaHours": 336,
+      "menuPath": "Housing"
+    },
+    {
+      "serviceCode": "IllegalActivitiesSlum",
+      "name": "All illegal Activities in Slum",
+      "active": true,
+      "keywords": "slum illegal activity, unauthorized activity, slum safety issue",
+      "department": "DEPT_10",
+      "slaHours": 336,
+      "menuPath": "Civic safety & Disaster"
+    },
+    {
+      "serviceCode": "MobileTowerPermission",
+      "name": "Permission for Mobile Tower",
+      "active": true,
+      "keywords": "mobile tower permission, telecom installation, building approval",
+      "department": "DEPT_10",
+      "slaHours": 336,
+      "menuPath": "Permission and approval"
+    },
+    {
+      "serviceCode": "OccupancyCertificate",
+      "name": "Occupancy Certificate",
+      "active": true,
+      "keywords": "occupancy certificate, OC approval, building certification, completion certificate",
+      "department": "DEPT_10",
+      "slaHours": 336,
+      "menuPath": "Permission and approval"
+    },
+    {
+      "serviceCode": "CommencementCertificateNMC",
+      "name": "Commencement Certificate in NMC",
+      "active": true,
+      "keywords": "commencement certificate, CC approval, construction approval",
+      "department": "DEPT_10",
+      "slaHours": 336,
+      "menuPath": "Permission and approval"
+    },
+    {
+      "serviceCode": "WaterBillNotReceived",
+      "name": "Non receipt of water bills",
+      "active": true,
+      "keywords": "water bill missing, bill not received, billing delay, utility bill issue",
+      "department": "DEPT_10",
+      "slaHours": 336,
+      "menuPath": "Payment & receipt"
+    }
 ]
 }
